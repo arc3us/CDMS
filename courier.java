@@ -1,28 +1,6 @@
-// public class Courier
-// {
-//     public static void main()
-//      {
-
-        
-//     }
-//     // Make weighted graph
-//     // take inputs of nodes -> courirer kidhar dena h
-//     // find shortest path
-//     // give output
-// }
-
 // Java implementation of the approach
 class courier
 {
-    // int [][] graph;
-    courier(int[][]g)
-    {
-      int[][] graph = {{0, 10, 15, 20},
-						{10, 0, 35, 25},
-						{15, 35, 0, 30},
-						{20, 25, 30, 0}}; 
-        g=graph;
-    }
 
 	// Function to find the minimum weight
 	// Hamiltonian Cycle
@@ -70,10 +48,13 @@ class courier
 		// n is the number of nodes i.e. V
 		int n = 4;
 
-		int graph = new int[4][3];
+		int[][] graph = {{0, 10, 15, 20},
+						{10, 0, 35, 25},
+						{15, 35, 0, 30},
+						{20, 25, 30, 0}};
 
-        courier obj = new courier(graph);
-
+		// Boolean array to check if a node
+		// has been visited or not
 		boolean[] v = new boolean[n];
 
 		// Mark 0th node as visited
@@ -87,3 +68,5 @@ class courier
 		System.out.println(ans);
 	}
 }
+
+// This code is contributed by Rajput-Ji
