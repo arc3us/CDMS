@@ -15,12 +15,7 @@ class courier
 		for(int i=0;i<9;i++) {
 			dijkstra(graph,i);
 		}
-		// for(int i=0;i<9;i++) {
-		// 	for(int j=0;j<9;j++) {
-		// 		System.out.print(distance[i][j]+ " ");
-		// 	}
-		// 	System.out.println();
-		// }
+		
 	}
 
 	//function to implement dijkstra's algorithm
